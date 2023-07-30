@@ -34,3 +34,12 @@ nav ul li{
     font-weight: bolder ;
     font-size: 1.3rem ;
 }
+.container{
+    
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+}
