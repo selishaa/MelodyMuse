@@ -35,11 +35,18 @@ nav ul li{
     font-size: 1.3rem ;
 }
 .container{
-    
+    min-height: 70vh;
 }
 .bottom{
     position: sticky;
     height: 100px;
     background-color: black;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#MyProgressBar{
+width: 70vw;
+ 
 }
