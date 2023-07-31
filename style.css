@@ -60,6 +60,7 @@ nav ul li{
 }
 #MyProgressBar{
 width: 70vw;
+cursor: pointer;
  
 }
 
@@ -95,7 +96,15 @@ width: 70vw;
 .timestamp i{
     cursor: pointer;
 }
-
+.songInfo{
+    position: absolute;
+    left: 15vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    font-family: 'Varela Round', sans-serif;
+}
   
   
   

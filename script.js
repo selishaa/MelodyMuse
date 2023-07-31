@@ -1,0 +1,41 @@
+console.log("Welcome to Spotify");
+
+//Initialize the variables
+let songIndex = 0;
+let audioElement = new Audio('1.mp3');
+let masterPlay = document.getElementById('masterPlay')
+let MyProgressBar = document.getElementById('MyProgressBar')
+let songs = [
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "Back to December", filepath:"song/1.mp3", coverPath: "covers/1.jpg"},
+]
+
+// audioElement.play();
+
+
+//Handle play/pause click
+masterPlay.addEventListener('click', ()=>{
+    if(audioElement.paused || audioElement.currentTime<=0){
+        audioElement.play();
+        masterPlay.classList.remove('fa-circle-play');
+        masterPlay.classList.add('fa-circle-pause');
+    }
+    else{
+        audioElement.pause();
+    masterPlay.classList.remove('fa-circle-pause');
+    masterPlay.classList.add('fa-circle-play');
+    }
+    
+
+})
+
+//Listen to Events {}
+MyProgressBar.addEventListener('timeupdate', ()=>{
+console.log('timeupdate')
+//Update Seekbar
+} )
