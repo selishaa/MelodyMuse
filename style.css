@@ -102,7 +102,7 @@ cursor: pointer;
 }
 .songInfo img{
     opacity: 0;
-    transition: opacity 1s ease-in;
+    transition: opacity 0.4s ease-in;
     font-family: 'Varela Round', sans-serif;
 }
   
