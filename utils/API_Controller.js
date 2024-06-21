@@ -29,7 +29,7 @@ class API_Controller {
         });
 
         const data = await res.json();
-        return data;
+        return data; 
     }
 
     getTrack = async(song, token) => {
