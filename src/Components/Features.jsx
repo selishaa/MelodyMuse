@@ -67,7 +67,7 @@ export default function Features() {
               transition={{ duration: 0.5 }}
               className="gap-[2rem] flex flex-col"
             >
-              <h1 className="text-6xl p-5">Get Started With Beat Bridge</h1>
+              <h1 className="text-6xl p-5">Get Started With Music Melody</h1>
               <ul className="text-xl font-bold list-disc pl-5">
                 <li className="text-2xl">Who are we:</li>
                 <ul className="text-lg list-disc pl-5">

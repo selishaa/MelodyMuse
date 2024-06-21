@@ -81,7 +81,7 @@ export default function PageThree() {
             textAlign: "center",
           }}
         >
-          BeatBridge?
+          MusicMelody?
         </p>
         <div
           className="absolute bg-gradient-to-r from-[#2A2438] to-[#5C5470] "
@@ -100,10 +100,10 @@ export default function PageThree() {
           <a
             rel="noreferrer"
             target="_blank"
-            href="https://github.com/pooranjoyb/BeatBridge"
+            href="https://github.com/selishaa/MelodyMuse"
             style={{ fontSize: "1.2vw", fontWeight: "600", padding: '2rem' }}
           >
-            github.com/pooranjoyb/BeatBridge
+            github.com/selishaa/MelodyMusic
           </a>
         </div>
       </motion.div>

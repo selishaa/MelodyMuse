@@ -67,7 +67,7 @@ export default function Home() {
           Your Gateway to a World of Rhythm
         </p>
         <p className="text-8xl font-bold mt-1 tracking-tighter">
-          Welcome to BeatBridge!
+          Welcome to MusicMelody!
         </p>
         <Link to='/search'>
           <button className="rounded-full mt-20 font-bold bg-gradient-to-r from-[#2A2438] to-[#5C5470] px-6 py-2 shadow-xl hover:shadow-inner transition-all ease-in duration-200 text-2xl text-[#f3ead3] tracking-wide">

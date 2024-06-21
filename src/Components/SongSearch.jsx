@@ -35,6 +35,7 @@ export default function SongSearch() {
         try {
             await user.searchSong(searchInput, token).then((data) => {
                 setTracks(data.tracks.items)
+                console.log("this is our tracks", data.tracks.items);
             }).catch((err) => {
                 console.log("Fetch Failed " + err)
             })

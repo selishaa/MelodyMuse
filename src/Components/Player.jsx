@@ -11,6 +11,8 @@ const clientID = import.meta.env.VITE_CLIENT_ID;
 const secret = import.meta.env.VITE_CLIENT_SECRET;
 
 export default function Player() {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   const location = useLocation();
   const navigatorData = location.state;
   const [token, setToken] = useState('');
@@ -53,6 +55,24 @@ export default function Player() {
 
     playAudio();
   }, [songData, token]);
+
+  const pause = () => {
+    
+    if (audioRef.current.paused) {
+      audioRef.current.play();
+      setIsPlaying(true);
+
+    } else {
+      audioRef.current.pause();
+      setIsPlaying(false);
+    }
+  }
+
+  const skipForwardTen = () => {
+    audioRef.current.currentTime += 10;
+  }
+
+
 
   return (
     <>
@@ -116,19 +136,38 @@ export default function Player() {
                       </svg>
                     </button>
                   </div>
-                  <button type="button" className="bg-white text-slate-900 dark:bg-slate-100 dark:text-slate-700 flex-none -my-2 mx-auto w-20 h-20 rounded-full ring-1 ring-slate-900/5 shadow-md flex items-center justify-center" aria-label="Pause">
-                    <svg width="30" height="32" fill="currentColor">
-                      <rect x="6" y="4" width="4" height="24" rx="2" />
-                      <rect x="20" y="4" width="4" height="24" rx="2" />
-                    </svg>
+                  
+
+
+
+                  <button onClick={pause} type="button" className="bg-white text-slate-900 dark:bg-slate-100 dark:text-slate-700 flex-none -my-2 mx-auto w-20 h-20 rounded-full ring-1 ring-slate-900/5 shadow-md flex items-center justify-center" aria-label="Pause">
+                    {isPlaying ? (
+                      <svg width="30" height="32" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="24" rx="2" />
+                        <rect x="20" y="4" width="4" height="24" rx="2" />
+                      </svg>
+                    ) : (
+                      <svg width="30" height="32" fill="currentColor">
+                        <polygon points="6,4 26,16 6,28" />
+                      </svg>
+                    )}
                   </button>
+
+
+
+
+
                   <div className="flex-auto flex items-center justify-evenly">
-                    <button type="button" aria-label="Skip 10 seconds">
+                    <button onClick= {skipForwardTen}type="button" aria-label="Skip 10 seconds">
                       <svg width="24" height="24" fill="none">
                         <path d="M17.509 16.95c-2.862 2.733-7.501 2.733-10.363 0-2.861-2.734-2.861-7.166 0-9.9 2.862-2.733 7.501-2.733 10.363 0 .38.365.711.759.991 1.176" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         <path d="M19 5v3.111c0 .491-.398.889-.889.889H15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </button>
+
+
+
+
                     <button type="button" className="hidden sm:block lg:hidden xl:block" aria-label="Next">
                       <svg width="24" height="24" fill="none">
                         <path d="M14 12 6 6v12l8-6Z" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

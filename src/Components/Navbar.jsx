@@ -23,10 +23,10 @@ export default function Navbar() {
                 <div className="pt-1 pb-1 flex flex-row justify-between">
                     <div className="mx-auto flex flex-row mb-2">
                         <h1 className="font-normal text-4xl inline mt-1 ml-24 pr-2 text-[#f3ead3]">
-                            BEAT{" "}
+                            Music{" "}
                         </h1>
                         <h1 className="inline border-b-4 pt-2 font-serif tracking-tight border-[#f3ead3] text-2xl text-[#f3ead3]">
-                            Bridge
+                            Melody
                         </h1>
                     </div>
                     <div className="pr-8 pt-2">
