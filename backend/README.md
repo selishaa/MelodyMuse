@@ -1,5 +1,3 @@
-# Backend for BeatBridge
-
 ## Requirements
 
 - python (3.6+)
