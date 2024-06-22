@@ -461,7 +461,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgba(221, 59, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -511,7 +511,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgba(246, 59, 212, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -991,7 +991,7 @@ video {
 }
 
 .bg-violet-800\/60{
-  background-color: rgb(91 33 182 / 0.6);
+  background-color: rgba(182, 33, 167, 0.6);
 }
 
 .bg-white{
@@ -1012,19 +1012,19 @@ video {
 }
 
 .from-\[\#2A2438\]{
-  --tw-gradient-from: #2A2438 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(42 36 56 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #b3659c var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(56, 36, 50, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#352F44\]{
-  --tw-gradient-from: #352F44 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(53 47 68 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #ce8ab7 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(68, 47, 62, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-\[\#5C5470\]{
-  --tw-gradient-to: #5C5470 var(--tw-gradient-to-position);
+  --tw-gradient-to: #e084e3 var(--tw-gradient-to-position);
 }
 
 .bg-cover{
